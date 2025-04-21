@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vie de Jésus-Christ</title>
+  <title>Textes Bibliques – Au cœur de l'Éternel</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>La vie de Jésus-Christ</h1>
-    <p>Explorez la biographie, les textes bibliques et une frise chronologique des événements marquants.</p>
+    <h1>Au cœur de l'Éternel</h1>
+    <p class="subtitle">Textes Bibliques – Louis Segond</p>
   </header>
 
   <nav>
+    <a href="index.html" class="active">Textes Bibliques</a>
     <a href="biographie.html">Biographie</a>
-    <a href="bible.html">Textes Bibliques</a>
     <a href="timeline.html">Frise Chronologique</a>
   </nav>
 
   <main>
-    <section>
-      <h2>Bienvenue</h2>
-      <p>Cette application vous propose une exploration complète de la vie de Jésus selon la Bible (Louis Segond 1910).</p>
+    <section class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Rechercher un mot, un passage, ou une référence..."
+      />
+    </section>
+
+    <section id="versesContainer" class="verse-list">
+      <!-- Versets affichés ici -->
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Vie de Jésus-Christ</p>
+    <p>&copy; 2025 Au cœur de l'Éternel – Tous droits réservés.</p>
   </footer>
 
   <script src="script.js"></script>
