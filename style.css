@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
   color: #0d47a1;
 }
@@ -8,8 +8,13 @@ body {
 header {
   background-color: #2196f3;
   color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
+}
+
+header .subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 nav {
@@ -17,16 +22,17 @@ nav {
   justify-content: center;
   background-color: #e3f2fd;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-  color: #1565c0;
+  color: #0d47a1;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;
 }
 
-nav a:hover {
+nav a.active {
   text-decoration: underline;
 }
 
@@ -34,9 +40,44 @@ main {
   padding: 2rem;
 }
 
+.search-bar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 500px;
+  padding: 0.8rem;
+  border: 2px solid #2196f3;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.verse-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.verse {
+  background-color: #f0f8ff;
+  border-left: 4px solid #2196f3;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.verse strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1565c0;
+}
+
 footer {
+  background-color: #e3f2fd;
   text-align: center;
   padding: 1rem;
-  background-color: #e3f2fd;
-  color: #1565c0;
+  margin-top: 2rem;
+  color: #0d47a1;
 }
